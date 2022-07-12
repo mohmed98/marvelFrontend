@@ -3,10 +3,12 @@ module.exports = {
     title: `marvelFE`,
     siteUrl: `https://www.yourdomain.tld`
   },
-  plugins: [{
-    resolve: 'gatsby-source-wordpress',
-    options: {
-      "url": "http://headless.local/graphql"
-    }
-  }]
+  plugins: [
+    'gatsby-plugin-postcss',
+    {
+      resolve: 'gatsby-source-wordpress',
+      options: {
+        "url": "http://headless.local/graphql"
+      }
+    }]
 };
